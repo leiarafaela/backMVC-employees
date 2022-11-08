@@ -1,7 +1,7 @@
 from app import app
-from app.model import Employess 
+from app.model import Tables 
 
 if __name__ == "__main__":
-    Employess.Base.metadata.create_all(Employess.engine)
+    Tables.Base.metadata.create_all(Tables.engine)
     # executa a aplicação
-    app.run(debug=True)
+    app.run()
